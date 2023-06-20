@@ -29,7 +29,12 @@ def verificar_vitoria():
         ganha_linha = grade[0][0]
     elif grade[0][2] == grade[1][1] == grade[2][0] and grade[0][2] is not None:
         ganha_linha = grade[0][2]
-
+    elif grade[0][0] == grade[1][0] == grade[2][0] and grade[0][0] is not None:
+        ganha_linha = grade[0][0]
+    elif grade[0][1] == grade[1][1] == grade[2][1] and grade[0][1] is not None:
+        ganha_linha = grade[0][1]
+    elif grade[0][2] == grade[1][2] == grade[2][2] and grade[0][2] is not None:
+        ganha_linha = grade[0][2]
     return ganha_linha
 
 grade = matriz()
